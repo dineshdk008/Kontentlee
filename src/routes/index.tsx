@@ -1115,7 +1115,7 @@ function Footer() {
             <p className="mt-4 max-w-md text-sm text-muted-foreground">
               A creative digital marketing agency helping Tamil Nadu businesses grow through creative content and impactful storytelling.
             </p>
-            <img src={wordmark} alt="Kontentlee Media" className="mt-6 h-10 w-auto opacity-40 invert" />
+            <img src={wordmark} alt="Kontentlee Media" className="mt-6 h-10 w-auto opacity-100 invert" />
           </div>
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-neon">Quick Links</div>
