@@ -30,24 +30,24 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import logo from "@/assets/kontentlee-logo.png.asset.json";
-import wordmark from "@/assets/kontentlee-wordmark.png.asset.json";
+import logo from "@/assets/kontentlee-logo.png";
+import wordmark from "@/assets/kontentlee-wordmark.png";
 
 export const Route = createFileRoute("/")({
   component: Home,
   head: () => ({
     meta: [
-      { title: "Kontentlee Media — Digital Marketing Agency in Tenkasi & Tirunelveli" },
+      { title: "Kontentlee Media — Digital Marketing Agency" },
       {
         name: "description",
         content:
-          "Premium reel editing, social media management, influencer marketing & Meta Ads for Southern Tamil Nadu businesses. Content that creates Impact.",
+          "Premium reel editing, social media management, influencer marketing & Meta Ads for Tamil Nadu businesses. Content that creates Impact.",
       },
       { property: "og:title", content: "Kontentlee Media — Content that creates Impact" },
-      { property: "og:description", content: "Premium digital marketing agency in Tenkasi & Tirunelveli." },
+      { property: "og:description", content: "Premium digital marketing agency in Tamil Nadu." },
       { property: "og:url", content: "/" },
-      { property: "og:image", content: logo.url },
-      { name: "twitter:image", content: logo.url },
+      { property: "og:image", content: logo },
+      { name: "twitter:image", content: logo },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -130,7 +130,7 @@ function Nav() {
         <div className={`flex items-center justify-between rounded-full px-4 py-2.5 transition-all ${scrolled ? "glass" : ""}`}>
           <a href="#top" className="flex items-center gap-2">
             <div className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary glow">
-              <img src={logo.url} alt="Kontentlee" className="h-full w-full rounded-xl object-cover" />
+              <img src={logo} alt="Kontentlee" className="h-full w-full rounded-xl object-cover" />
             </div>
             <span className="font-display text-lg font-extrabold tracking-tight">Kontentlee<span className="text-neon"> Media</span></span>
           </a>
@@ -758,16 +758,16 @@ function Pricing() {
 
 /* ---------------- PORTFOLIO ---------------- */
 
-import lkAutoImg from "@/assets/lk-auto.png.asset.json";
-import kottravaiImg from "@/assets/kottravai.png.asset.json";
-import sundaramImg from "@/assets/sundaram.png.asset.json";
-import signartsImg from "@/assets/signarts.jpg.asset.json";
+import lkAutoImg from "@/assets/lk-auto.png";
+import kottravaiImg from "@/assets/kottravai.PNG";
+import sundaramImg from "@/assets/sundaram.png";
+import signartsImg from "@/assets/signarts.jpg";
 
 const portfolio = [
-  { title: "LK Auto Consulting", cat: "Automobile Sales", handle: "lk_auto_consulting", hue: 300, featured: true, image: lkAutoImg.url, fit: "contain" as const, bg: "#000000" },
-  { title: "Kottravai", cat: "Lifestyle", handle: "kottravai_in", hue: 320, image: kottravaiImg.url, fit: "contain" as const, bg: "#ffffff" },
-  { title: "Sundaram Builders", cat: "Construction", handle: "sundaram_builders__", hue: 310, image: sundaramImg.url, fit: "cover" as const, bg: "#ffffff" },
-  { title: "Sign Arts", cat: "Digital Printing", handle: "signarts.gallery", hue: 290, image: signartsImg.url, fit: "cover" as const, bg: "#000000" },
+  { title: "LK Auto Consulting", cat: "Automobile Sales", handle: "lk_auto_consulting", hue: 300, featured: true, image: lkAutoImg, fit: "contain" as const, bg: "#000000" },
+  { title: "Kottravai", cat: "Lifestyle", handle: "kottravai_in", hue: 320, image: kottravaiImg, fit: "contain" as const, bg: "#ffffff" },
+  { title: "Sundaram Builders", cat: "Construction", handle: "sundaram_builders__", hue: 310, image: sundaramImg, fit: "cover" as const, bg: "#ffffff" },
+  { title: "Sign Arts", cat: "Digital Printing", handle: "signarts.gallery", hue: 290, image: signartsImg, fit: "cover" as const, bg: "#000000" },
 ];
 
 
@@ -1108,14 +1108,14 @@ function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
               <div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary glow">
-                <img src={logo.url} alt="Kontentlee" className="h-full w-full rounded-2xl object-cover" />
+                <img src={logo} alt="Kontentlee" className="h-full w-full rounded-2xl object-cover" />
               </div>
               <div className="font-display text-2xl font-black">Kontentlee<span className="text-neon"> Media</span></div>
             </div>
             <p className="mt-4 max-w-md text-sm text-muted-foreground">
               A creative digital marketing agency helping Tamil Nadu businesses grow through creative content and impactful storytelling.
             </p>
-            <img src={wordmark.url} alt="Kontentlee Media" className="mt-6 h-10 w-auto opacity-40 invert" />
+            <img src={wordmark} alt="Kontentlee Media" className="mt-6 h-10 w-auto opacity-40 invert" />
           </div>
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-neon">Quick Links</div>
